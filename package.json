@@ -1,0 +1,22 @@
+{
+  "name": "michael-trinh",
+  "version": "1.0.0",
+  "description": "portfolio site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "William Chan",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.0",
+    "tailwindcss": "^2.1.4"
+  },
+  "dependencies": {
+    "dat.gui": "^0.7.7",
+    "jquery": "^3.6.0",
+    "stats-js": "^1.0.1",
+    "three": "^0.129.0"
+  }
+}

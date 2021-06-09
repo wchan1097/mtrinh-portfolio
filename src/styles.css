@@ -1,0 +1,62 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+#webgl{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  animation-name: backgroundZoom;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  filter: blur(2px);
+}
+
+h1{
+  font-size: 4rem;
+}
+
+h2{
+  font-size: 2.5rem;
+}
+
+.staat{
+  font-family: 'Staatliches', cursive;
+}
+
+#webgl:before{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  opacity: 50%;
+  background-image: linear-gradient(to top right,#c2fffa, #fd96ff);
+}
+
+.gallery-img{
+  transition: .5s;
+}
+
+.gallery-img:hover{
+  transform: scale(1.05);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+@keyframes backgroundZoom {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}

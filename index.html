@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Trinh - Local Austin Artist</title>
+  <script type="text/javascript" src="src/index.js" defer=true></script>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/three/build/three.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/tailwindcss/dist/tailwind.css">
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <main class="flex flex-col gap-6 pb-6">
+    <nav 
+    id="nav"
+    class="p-5 bg-gray-100 w-full">
+      <div class="flex justify-between" style="width: 1000px; margin: auto;">
+        <div class="flex items-center">
+          <div class="mr-3 bg-blue-300" style="height: 50px; width: 50px; border-radius: 50px;"></div>
+        </div>
+        <div class="flex items-center">
+          <a class="mr-4 hover:border-blue-700 border-b-2 border-transparent p-2" href="#">Gallery</a>
+          <a class="mr-4 hover:border-blue-700 border-b-2 border-transparent p-2" href="#">Store</a>
+          <a class="flex font-bold items-center  bg-blue-100 hover:bg-blue-200 p-2 rounded" href="#">
+            Lets Collaborate
+            <img style="width: 30px;" src="public/drawing.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section 
+    id="about"
+    class="p-5 bg-gray-100 w-full rounded gap-6" 
+    style="width: 1000px; margin: auto; display: grid; grid-template-columns: 3fr 1fr;"
+    >
+      <div class="flex flex-col justify-between gap-6">
+        <div
+        style="transform: translateY(-15px);"
+        >
+          <h1 class="staat">Michael Trinh.</h1>
+          <p 
+          style="transform: translateY(-10px);"
+          >
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, rerum quis commodi, 
+            in ipsam consectetur ducimus nisi est aperiam iste obcaecati quod nostrum ipsum fuga beatae 
+            asperiores impedit itaque tenetur.
+          </p>
+        </div>
+        <div>
+          <a href="#" class="rounded bg-pink-200 px-4 py-2 hover:bg-pink-300">
+            Lets Get To Work
+          </a>
+        </div>
+      </div>
+      <div
+      style="border-radius: 100%; overflow: hidden;"
+      >
+        <img src="/public/Profile.png" alt="">
+      </div>
+    </section>
+    <section
+    id="gallery"
+    class="p-5 bg-gray-100 w-full rounded gap-6" 
+    style="width: 1000px; margin: auto;"
+    >
+      <h2 class="staat pb-1">Sample Pieces</h2>
+      <div 
+      class="gap-6"
+      style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))">
+        <img class="gallery-img rounded" src="public/Watermark.png" alt="">
+        <img class="gallery-img rounded" src="public/Kimwatermark.png" alt="">
+        <img class="gallery-img rounded" src="public/Untitled_Artwork(2).png" alt="">
+        <img class="gallery-img rounded" src="public/Untitled_Artwork.png" alt="">
+        </div>
+    </section>
+  </main>
+  <footer
+  class="w-full bg-gray-100"
+  style="height: 100px">
+
+  </footer>
+  <div id="webgl"></div>
+</body>
+</html>
