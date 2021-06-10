@@ -1,5 +1,3 @@
-import * as THREE from 'three';
-
 var screenWidth = window.innerWidth;
 var screenHeight = window.innerHeight;
 var step = 0;
